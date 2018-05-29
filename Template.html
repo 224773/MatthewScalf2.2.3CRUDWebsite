@@ -1,0 +1,62 @@
+<html lang="en">
+    <head> 
+    <link rel="stylesheet" type="text/css" href="crudstyle.css">
+    <script type="text/javascript" src="CrudJS.js"></script>
+    <title>CRUD project</title>
+    </head>
+    
+        <center>
+            <img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/gamepad-icon.png" border="0px" 
+               width="400px" height="300px" >
+            <h2>JavaScript Example:</h2>
+            <p id="demo">Video Game's list.</p>
+            <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+        </center>
+        <br>
+        <br>
+        <center>
+            <form action='Submit.php' method = 'post'>
+            <input name = 'create'   type = 'submit' value = 'submit Info'>
+                <input type="text" placeholder="Title" name='title'>
+                <select id='select' name='Year'>
+                    <option value="2000" >2000</option>
+                    <option value="2001" >2001</option>
+                    <option value="2002" >2002</option>
+                    <option value="2003" >2003</option>
+                    <option value="2004" >2004</option>
+                    <option value="2005" >2005</option>
+                    <option value="2006" >2006</option>
+                    <option value="2007" >2007</option>
+                    <option value="2008" >2008</option>
+                    <option value="2009" >2009</option>
+                    <option value="2010" >2010</option>
+                    <option value="2011" >2011</option>
+                    <option value="2012" >2012</option>
+                    <option value="2013" >2013</option>
+                    <option value="2014" >2014</option>
+                    <option value="2015" >2015</option>
+                    <option value="2016" >2016</option>
+                    <option value="2017" >2017</option>
+                    <option value="2018" >2018</option>
+                </select>
+                <input type="text" placeholder="Genre" name='genre'>
+                    <p></p>
+                    
+                </form>
+                Find the list of all game entries
+                <form action= 'read.php' method = 'post'>
+                <input name = 'read'   type = 'submit' value = 'Find Info'>
+                </form>
+                Update game's genre
+                <form action= 'Update.php' method = 'post'>
+                <input name = 'Update'   type = 'submit' value = 'Update Info'>
+                </form>
+                Delete game from list
+                <form action= 'Delete.php' method = 'post'>
+                <input name = "Delete"   type = 'submit' value = 'Delete Info'>
+                </form>
+            
+                
+        </center>
+        
+        
